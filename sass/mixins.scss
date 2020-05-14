@@ -1,0 +1,123 @@
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin carusel-btn($top-right, $bottom-left) {
+    border-top: $top-right;
+    border-right: $top-right;
+    border-bottom: $bottom-left;
+    border-left: $bottom-left;
+}
+
+@mixin button {
+    display: block;
+    width: 170px;
+    font-family: $font-title;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+    background-color: #998675;
+    border-radius: 3px;
+    box-shadow: 0 -3px 0 0 #736357 inset;
+    border: none;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: #938272;
+        color: #eee;
+        outline: none;
+    }
+
+    &:active {
+        background-color: #8c7b6c;
+        box-shadow: 0 -2px 0 0 #736357 inset;
+        color: #ddd;
+        outline: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@mixin menu-link {
+    color: $clr-menu;
+
+    &:hover {
+        color: $clr-menu-hvr;
+    }
+
+    &:active {
+        color: $clr-menu-act;
+    }
+}
+
+@mixin link {
+    color: $clr-lnk;
+
+    &:hover {
+        color: $clr-lnk-hvr;
+    }
+
+    &:active {
+        color: $clr-lnk-act;
+    }
+}
+
+@mixin title-h2($color, $font-weight) {
+    color: $color;
+    font-weight: $font-weight;
+    font-family: $font-title;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+@mixin txt {
+    font-family: $font-txt;
+    color: $clr-txt;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+@mixin button-small {
+    display: block;
+    min-width: 70px;
+    min-height: 32px;
+    font-family: $font-txt;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #8c8c8c;
+    line-height: 32px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+    padding: 0 20px;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: #998675;
+        border: 1px solid transparent;
+        color: #fff;
+        outline: none;
+    }
+
+    &:active {
+        background-color: #8c7b6c;
+        color: #eee;
+        outline: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
