@@ -1,0 +1,27 @@
+@font-face {
+     font-family: 'link-lupa';
+     src: url('../fonts/link-lupa.eot?99468216');
+     src: url('../fonts/link-lupa.eot?99468216#iefix') format('embedded-opentype'),
+          url('../fonts/link-lupa.woff?99468216') format('woff'),
+          url('../fonts/link-lupa.ttf?99468216') format('truetype'),
+          url('../fonts/link-lupa.svg?99468216#link-lupa') format('svg');
+     font-weight: normal;
+     font-style: normal;
+}
+
+[class^="icon-"] {
+     font-family: "link-lupa";
+     font-style: normal;
+     font-weight: normal;
+     text-decoration: none;
+     text-transform: none;
+     font-size: 26px;
+}
+
+.icon-link:before {
+     content: '\e804';
+}
+
+.icon-lupa:before {
+     content: '\e805';
+}
