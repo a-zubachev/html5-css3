@@ -1,0 +1,76 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    
+    .site-header {
+        min-height: none;
+    }
+
+    .site-header:before {
+        content: "";
+        display: block;
+        height: 130px;
+    }
+
+    .carusel-txt {
+        min-height: none;
+        height: 794px;
+    }
+
+    .carusel-txt-title,
+    .carusel-txt-title-main
+    {
+        width: 600px;
+    }
+
+    .carusel-txt-p {
+        width: 590px;
+    }
+
+    .latest-projects-item:hover .latest-projects-item-img {
+        opacity: 0.3;
+    }
+    
+    .latest-projects-item:hover {
+        background-color: #000;
+        
+    }
+
+    .textboxes {
+        min-height: none;
+    }
+
+    .textboxes:before {
+        content: "";
+        display: block;
+        height: 150px;
+    }
+
+    .counters {
+        min-height: none;
+    }
+
+    .counters:before {
+        content: "";
+        display: block;
+        height: 300px;
+    }
+
+    .partners {
+        min-height: none;
+    }
+
+    .partners:before {
+        content: "";
+        display: block;
+        height: 489px;
+    }
+
+    .copyright {
+        min-height: none;
+    }
+
+    .copyright:before {
+        content: "";
+        display: block;
+        height: 111px;
+    }
+}

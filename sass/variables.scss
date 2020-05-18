@@ -1,5 +1,6 @@
 $font-title: 'raleway', 'verdana', sans-serif;
 $font-txt: 'montserrat', 'verdana', sans-serif;
+$roboto: 'roboto', 'verdana', sans-serif;
 $clr-dark: #555;
 $clr-light: #fff;
 $clr-coloured: #c7b299;
@@ -12,5 +13,8 @@ $clr-txt: #8c8c8c;
 $clr-lnk: $clr-dark;
 $clr-lnk-hvr: $clr-coloured;
 $clr-lnk-act: $clr-dark;
-$bd-carusel-btn: 3px solid rgba(255, 255, 255, 0.5);
-$bd-carusel-btn-hvr: 3px solid #d3c1ad;
+$bd-carusel-btn: 3px solid $clr-coloured;
+$bd-carusel-btn-hvr: 3px solid #d1d1d1;
+$bd-arrows-btn: 2px solid $clr-coloured;
+$bd-arrows-btn-hvr: 2px solid #d1d1d1;
+$trans-time: 150ms;

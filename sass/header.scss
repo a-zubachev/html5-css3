@@ -13,7 +13,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-height: 100px;
+    min-height: 130px;
 }
 
 .logo {
@@ -23,6 +23,7 @@
     width: 181px;
     text-decoration: none;
     color: #fff;
+    transition: color $trans-time;
     
     &:hover {
         color: #998675;
@@ -148,58 +149,59 @@
         min-width: 40px;
         min-height: 73px;
         position: relative;
-    }
-    
-    &-btn:after {
-        content: "";
-        top: 10px;
-        width: 52px;
-        height: 52px;
-        transform: rotate(45deg);
-        position: absolute;
-    }
-    
-    &-btn:nth-of-type(1) {
-        margin: 0 50px 0 0;
-    
-        &:after {
-            @include carusel-btn(none, $bd-carusel-btn);
-            left: 11px;
-        }
-        
-        &:hover:after {
-            @include carusel-btn(none, $bd-carusel-btn-hvr);
-        }
-        
-        &:active:after {
-            @include carusel-btn(none, $bd-carusel-btn);
-        }
-    }
-    
-    &-btn:nth-of-type(2) {
-        margin: 0 0 0 50px;
-    
-        &:after {
-            @include carusel-btn($bd-carusel-btn, none);
-            left: -25px;
-        }
-        
-        &:hover:after {
-            @include carusel-btn($bd-carusel-btn-hvr, none);
-        }
-        
-        &:active:after {
-            @include carusel-btn($bd-carusel-btn, none);
-        }
-    }
 
+        &:after {
+            content: "";
+            top: 10px;
+            width: 52px;
+            height: 52px;
+            transform: rotate(45deg);
+            position: absolute;
+            transition: border-color $trans-time;
+        }
+        
+        &:nth-of-type(1) {
+            margin: 0 50px 0 0;
+        
+            &:after {
+                @include carusel-btn(none, $bd-carusel-btn);
+                left: 11px;
+            }
+            
+            &:hover:after {
+                @include carusel-btn(none, $bd-carusel-btn-hvr);
+            }
+            
+            &:active:after {
+                @include carusel-btn(none, $bd-carusel-btn);
+            }
+        }
+        
+        &:nth-of-type(2) {
+            margin: 0 0 0 50px;
+        
+            &:after {
+                @include carusel-btn($bd-carusel-btn, none);
+                left: -25px;
+            }
+            
+            &:hover:after {
+                @include carusel-btn($bd-carusel-btn-hvr, none);
+            }
+            
+            &:active:after {
+                @include carusel-btn($bd-carusel-btn, none);
+            }
+        }
+    }
+    
     &-txt {
+        width: 590px;
+        min-height: 794px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 590px;
-        min-height: 824px;
         text-align: center;
     
         &-title {
@@ -259,6 +261,11 @@
             background-color: #fff;
             border-radius: 50%;
             border: 2px solid transparent;
+            transition: background-color 80ms,
+                        border-color 80ms,
+                        transform 80ms,
+                        opacity 80ms;
+
 
             &:hover {
                 background-color: transparent;
