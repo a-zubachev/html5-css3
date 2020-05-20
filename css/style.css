@@ -1430,6 +1430,10 @@
 .main-footer-widget-content-img {
   display: block;
   margin: 0 0 10px;
+  transition: filter 150ms;
+}
+.main-footer-widget-content-img:hover {
+  filter: brightness(70%);
 }
 .main-footer-widget-content-img:nth-child(3), .main-footer-widget-content-img:nth-child(4) {
   margin: 0;

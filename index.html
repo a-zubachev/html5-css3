@@ -418,25 +418,8 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/waypoints.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>
-<script>
-    jQuery(document).ready(function ($) {
-        $('.counter-script').counterUp({
-            delay: 10,
-            time: 1000
-        });
-    });
-</script>
-<script>
-    var video = document.querySelector("#video"),
-        button = document.querySelector("#button");
-    button.addEventListener("click", function () {
-        video.play()
-        video.setAttribute("controls", "controls");
-    }, false);
-    $("#button").click(function () {
-        $(".video_wrp").addClass('video_wrp-hide');
-    })
-</script>
+<script src="js/counter.js"></script>
+<script src="js/video.play.js"></script>
 </body>
 
 </html>

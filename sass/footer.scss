@@ -248,6 +248,11 @@
             &-img {
                 display: block;
                 margin: 0 0 10px;
+                transition: filter $trans-time;
+
+                &:hover {
+                    filter: brightness(70%);
+                }
 
                 &:nth-child(3),
                 &:nth-child(4) {
