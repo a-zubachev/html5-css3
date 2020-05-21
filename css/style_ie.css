@@ -10,28 +10,19 @@
         height: 130px;
     }
 
-    .carusel-txt {
+    .carusel-slide-content {
         min-height: none;
-        height: 794px;
+        height: 724px;
     }
 
-    .carusel-txt-title,
-    .carusel-txt-title-main
+    .carusel-slide-content-title,
+    .carusel-slide-content-title-main
     {
         width: 600px;
     }
 
-    .carusel-txt-p {
+    .carusel-slide-content-p {
         width: 590px;
-    }
-
-    .latest-projects-item:hover .latest-projects-item-img {
-        opacity: 0.3;
-    }
-    
-    .latest-projects-item:hover {
-        background-color: #000;
-        
     }
 
     .textboxes {
@@ -68,7 +59,11 @@
         min-height: none;
     }
 
-    .copyright:before {
+    .copyright_wrp {
+    align-items: center;
+    }
+    
+    .copyright_wrp:first-child:after {
         content: "";
         display: block;
         height: 111px;

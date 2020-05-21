@@ -1,0 +1,1 @@
+$('.single-slide').slick({dots: true});

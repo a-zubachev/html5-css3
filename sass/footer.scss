@@ -251,7 +251,7 @@
                 transition: filter $trans-time;
 
                 &:hover {
-                    filter: brightness(70%);
+                    filter: brightness(130%);
                 }
 
                 &:nth-child(3),
@@ -275,7 +275,7 @@
     font-weight: 300;
     padding: 0 50px;
     @include border-box;
-    max-width: 1170px + 2*50px;
+    max-width: $width-site-large + 2*50px;
     margin: 0 auto;
 
     &_wrp {

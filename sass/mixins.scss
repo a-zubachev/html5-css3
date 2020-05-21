@@ -13,7 +13,7 @@
 
 @mixin button {
     display: block;
-    width: 170px;
+    width: 168px;
     font-family: $font-title;
     font-size: 14px;
     font-weight: 800;
@@ -21,26 +21,31 @@
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    line-height: 50px;
+    line-height: 48px;
     background-color: #998675;
     border-radius: 3px;
-    box-shadow: 0 -3px 0 0 #736357 inset;
-    border: none;
+    box-shadow: 0 -2px 0 0 #736357 inset;
+    border: 1px solid transparent;
+    border-bottom-color: #736357;
+    // -webkit-box-sizing: border-box;
+    // -moz-box-sizing: border-box;
+    // box-sizing: border-box;
     cursor: pointer;
+    outline: none;
     transition: color $trans-time,
-                background-color $trans-time;
+                background-color $trans-time,
+                border-color $trans-time;
     
     &:hover {
-        background-color: #938272;
-        color: #eee;
-        outline: none;
+        background-color: #fff;
+        border-color: #736357;
+        color: #8c8c8c;
     }
 
     &:active {
         background-color: #8c7b6c;
         box-shadow: 0 -2px 0 0 #736357 inset;
         color: #ddd;
-        outline: none;
     }
 
     &:focus {
@@ -107,6 +112,7 @@
     border: 1px solid #ebebeb;
     padding: 0 20px;
     cursor: pointer;
+    outline: none;
     transition: color $trans-time,
                 background-color $trans-time,
                 border $trans-time;
@@ -115,13 +121,11 @@
         background-color: #998675;
         border: 1px solid transparent;
         color: #fff;
-        outline: none;
     }
 
     &:active {
         background-color: #8c7b6c;
         color: #eee;
-        outline: none;
     }
 
     &:focus {
