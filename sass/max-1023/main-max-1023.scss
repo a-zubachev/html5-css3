@@ -1,0 +1,74 @@
+.services {
+    width: 680px;
+    padding: 50px 0;
+    margin: 0 auto;
+
+    &-item {
+        width: 340px;
+        padding: 30px;
+    }
+}
+
+.latest-projects {
+	&-title,
+	&-txt {
+		max-width: 630px;
+	}
+}
+
+.excellent-content {
+    background: none;
+    margin: 0;
+    padding: 0 140px 80px;
+    min-height: none;
+
+    &-title,
+    &-txt,
+    &-list {
+        max-width: none;
+    }
+}
+
+.counters-item {
+    width: 145px;
+
+    &-icon {
+        margin: 0 0 20px;
+    }
+    
+    &-numbers {
+        font-size: 42px;
+        margin: 0 0 10px 0;
+    }
+    
+    &-title {
+        font-size: 12px;
+    }
+    
+    &:after {
+        margin: 20px 0 0 0;
+    }
+}
+
+.recent {
+    &-title,
+    &-txt {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+.partners {
+    min-height: 589px;
+    padding: 0px 54px;
+    @include border-box;
+
+    &-link {
+        margin: 45px;
+        transform: scale(1);
+    
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

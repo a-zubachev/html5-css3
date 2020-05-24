@@ -178,6 +178,7 @@
         margin: 14px 10px 0;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         &-btn {
             @include button-small;
             margin: 10px;
@@ -329,7 +330,6 @@
 }
 
 .video {
-    min-height: 300px;
     position: relative;
 
     &-content {
@@ -799,6 +799,7 @@
     &-link {
         display: block;
         margin: 45px;
+        text-align: center;
         transition: filter $trans-time,
                     transform $trans-time;
     

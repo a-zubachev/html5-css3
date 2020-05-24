@@ -1,0 +1,75 @@
+.services {
+    width: 100%;
+    &-item {
+        width: 100%;
+        max-width: 340px;
+        padding: 4%;
+    }
+}
+
+.latest-projects {
+
+    &-title {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    &-txt {
+        font-size: 14px;
+    }
+
+    &-menu {
+        margin-top: 0;
+    
+        &-btn {
+            width: 100%;
+        }
+    }
+}
+
+.excellent {
+
+    &-content {
+        padding-bottom: 40px;
+
+        &-title {
+            font-size: 28px;
+            margin-top: 40px;
+        }
+
+        &-txt {
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+        &-list {
+            margin-left: 30px;
+            padding-left: 15px;
+            &-item {
+                font-size: 14px;
+                line-height: 28px;
+
+                &:before {
+                    width: 18px;
+                    height: 18px;
+                    top: 6px;
+                    left: -28px;
+                }
+            }
+        }
+    }
+}
+
+.recent {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &-title {
+        font-size: 28px;
+    }
+
+    &-txt {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}

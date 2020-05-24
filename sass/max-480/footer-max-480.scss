@@ -1,0 +1,14 @@
+.copyright {
+    &_wrp {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &-item:first-child {
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}

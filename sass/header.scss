@@ -9,11 +9,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    min-height: 130px;
+    height: 130px;
     z-index: 1;
-    min-width: $width-site-large;
+    width: $width-site-large;
     left: 50%;
-    margin-left: -585px;
+    margin-left: $width-site-large * (-1/2);
 }
 
 .logo {
@@ -24,7 +24,7 @@
     text-decoration: none;
     color: #fff;
     transition: color $trans-time;
-    margin-right: 159px;
+    margin-right: 199px;
     
     &:hover {
         color: #998675;
@@ -51,10 +51,17 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    &-toggle {
+        &, &-element {
+            display: none;
+        }
+    }
+
     &-list {
         display: flex;
         justify-content: space-between;
         list-style: none;
+        padding: 0;
     }
     
     &-item {
@@ -127,6 +134,13 @@
         font-size: 14px;
         font-weight: 400;
 
+        &::-ms-clear {  display: none; width : 0; height: 0; }
+        &::-ms-reveal {  display: none; width : 0; height: 0; }
+        &::-webkit-search-decoration,
+        &::-webkit-search-cancel-button,
+        &::-webkit-search-results-button,
+        &::-webkit-search-results-decoration { display: none; }
+
         &:focus {
             width: 200px;
             min-height: 20px;
@@ -191,7 +205,7 @@
             &-title {
                 font-family: $font-title;
                 font-size: 36px;
-                line-height: 1.2;
+                line-height: 43.2px;
                 font-weight: 500;
                 color: #fff;
                 margin: 0 0 5px 0;
@@ -199,7 +213,7 @@
                 &-main {
                     font-family: $font-title;
                     font-size: 52px;
-                    line-height: 1.2;
+                    line-height: 62.4px;
                     font-weight: 800;
                     color: #fff;
                     margin: 0 0 10px 0;
@@ -209,7 +223,7 @@
             &-p {
                 font-family: $font-txt;
                 font-size: 16px;
-                line-height: 24px;
+                line-height: 1.5;
                 font-weight: 300;
                 color: #ffffff;
                 margin: 0;

@@ -1,0 +1,36 @@
+.logo {
+    margin-right: 60px;
+    transform: scale(.9);
+}
+
+.site-header {
+    width: $width-site-medium - 30px;
+    left: 50%;
+    margin-left: ($width-site-medium - 30px) * (-1/2);
+    height: 100px;
+}
+
+.menu-item {
+    margin: 0 25px 0 0;
+}
+
+.cart-btn {
+    margin-left: 40px;
+}
+
+.carusel-slide {
+    padding: 100px;
+    
+    &-content {
+        min-height: 568px;
+        width: 520px;
+
+        &-title {
+            font-size: 32px;
+
+            &-main {
+                font-size: 46px;
+            }
+        }
+    }
+}

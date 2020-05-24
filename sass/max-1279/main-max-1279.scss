@@ -1,0 +1,54 @@
+.services-item {
+    width: 250px;
+}
+
+.textboxes-container {
+    width: 80%;
+}
+
+.video {
+    &-title {
+        margin: 10px 0 10px;
+    }
+
+    &-txt {
+        margin: 0 0 15px;
+    }
+}
+
+.excellent-content {
+    margin: 80px 10px 0 28px;
+    padding: 0 0 0 390px;
+
+    &-title {
+        @include title-h2($clr-title, 600);
+        max-width: 560px;
+    }
+
+    &-txt {
+        max-width: 560px;
+    }
+
+    &-list {
+        margin: 30px 0 0 50px;
+        padding-left: 40px;
+        max-width: 480px;
+    }
+}
+
+.counters-item {
+    width: 190px;
+}
+
+.partners {
+    min-height: 420px;
+
+    &-link {
+        margin: 15px;
+        transform: scale(.9);
+    
+        &:hover {
+            transform: scale(1);
+        }
+    }
+}
