@@ -1,7 +1,7 @@
 $font-title: 'raleway', 'verdana', sans-serif;
 $font-txt: 'montserrat', 'verdana', sans-serif;
 $roboto: 'roboto', 'verdana', sans-serif;
-$width-site-large: 1170px;
+$width-site-large: 1200px;
 $width-site-medium: 1024px;
 $width-site-small: 768px;
 $clr-dark: #555;
@@ -21,3 +21,6 @@ $bd-carusel-btn-hvr: 3px solid #d1d1d1;
 $bd-arrows-btn: 2px solid $clr-coloured;
 $bd-arrows-btn-hvr: 2px solid #d1d1d1;
 $trans-time: 150ms;
+$size-480: (1/480)*100vw;
+$size-767: (1/767)*100vw;
+$size-1023: (1/1023)*100vw;

@@ -240,7 +240,7 @@
             }
 
             &:active {
-                filter: brightness(80%);
+                color: $clr-coloured - #222;
                 outline: none;
             }
 
@@ -333,6 +333,7 @@
     position: relative;
 
     &-content {
+        display: block;
         width: 100%;
         height: (704/1920)*100vw;
     }
@@ -422,8 +423,7 @@
         min-height: 616px;
         background-image: url(../img/iphone_in_hand.png);
         background-repeat: no-repeat;
-        background-position-x: left;
-        background-position-y: bottom;
+        background-position: left bottom;
 
         &-title {
             @include title-h2($clr-title, 600);
@@ -674,7 +674,7 @@
                 }
 
                 &:hover:after {
-                    border-left: 5px solid $clr-light;
+                    border-left-color: $clr-light;
                 }
 
                 &:active {
@@ -682,7 +682,7 @@
                 }
     
                 &:active:after {
-                    border-left: 5px solid $clr-coloured; 
+                    border-left-color: $clr-coloured; 
                 }
             }
 
@@ -716,6 +716,7 @@
 
         &-btn {
             margin: 0 8px;
+            padding: 0;
             width: 22px;
             height: 22px;
             border: 2px solid $clr-coloured;

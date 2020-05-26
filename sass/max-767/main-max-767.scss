@@ -1,5 +1,6 @@
 .services {
     width: 100%;
+    padding: 30px 0;
     &-item {
         width: 50%;
         max-width: 340px;
@@ -11,7 +12,7 @@
 .textboxes {display: none;}
 
 .latest-projects {
-    padding-top: 40px;
+    padding-top: 20px;
 
     &-title,
     &-txt {
@@ -27,20 +28,17 @@
         background-color: #fbfaf8;
         transition: background-color $trans-time;
 
-        &:hover {
-            background-color: #362f2d;
+        &:hover,
+        &:hover &-title {
+            background-color: #fbfaf8;
         }
 
         &:hover &-img {
             filter: none;
         }
 
-        &:hover &-title {
-            background-color: none;
-        }
-
         &:hover &-title:before {
-            border-bottom: 10px solid #362f2d;
+            border-bottom: 10px solid #fbfaf8;
         }
 
         &-btn {
@@ -52,11 +50,11 @@
             margin-bottom: 60px;
 
             &:hover {
-                filter: brightness(120%);
+                color: $clr-coloured - #222;
             }
 
             &:active {
-                filter: brightness(110%);
+                color: $clr-coloured - #111;
             }
 
             &-link {
@@ -122,11 +120,11 @@
         }
 
         &:hover &-title-main {
-            color: $clr-light;
+            color: $clr-coloured;
         }
 
         &:hover &-title-note {
-            color: $clr-coloured;
+            color: #d1d1d1;
         }
         
     }
@@ -138,13 +136,35 @@
 }
 
 .excellent {
+    
     &-content {
-        padding: 0 0 80px;
-        max-width: 85vw;
+        background-size: $size-767*280;
+        background-position: $size-1023*60 bottom;
+        margin: 0;
+        padding: 60px 0 $size-767*40;
+        min-height: 580px;
+
+        &-title,
+        &-txt,
+        &-list {
+            max-width: none;
+        }
 
         &-title {
-            text-align: center;
-            margin-top: 60px;
+            margin: 0 $size-767*80 30px;
+        }
+
+        &-txt {
+            margin: 0 $size-767*80;
+        }
+
+        &-list {
+            margin: 60px  $size-767*80 0 $size-767*300;
+
+            &-item {
+                line-height: 1.4;
+                margin: 10px;
+            }
         }
     }
 }
@@ -152,6 +172,7 @@
 .counters {display: none;}
 
 .recent {
+    padding: 60px 10px;
     &-item {
         width: 85vw;
         max-width: 370 * 1.2px;
@@ -162,21 +183,75 @@
             max-width: 370 * 1.2px;
             max-height: 220 * 1.2px;
         }
+
+        &:hover &-img {
+            filter: none;
+        }
+
+        &:hover &-title {
+            background-color: #fbfaf8;
+        }
+
+        &-title {
+            &-link {
+                &:hover {
+                    color: $clr-coloured + #222;
+                }
+
+                &:hover:after {
+                    border-left-color: $clr-coloured + #222;
+                }
+
+                &:active {
+                    color: $clr-coloured;
+                }
+    
+                &:active:after {
+                    border-left-color: $clr-coloured; 
+                }
+            }
+        }
+
+        &:hover &-date-day {
+            background-color: #363636;
+        }
+
+        &:hover &-date-month {
+            background-color: #252525;
+        }
+
+        &:hover &-title-main {
+            color: $clr-title;
+        }
+
+        &:hover &-title-note {
+            color: $clr-txt;
+        }
+
+        &:hover &-title {
+            border-color: transparent;
+        }
+    }
+
+    &-arrows {
+        display: none;
     }
 }
 .partners {
-    padding: 30px 10px;
+    min-height: auto;
+    padding: $size-767*20 5%;
     @include border-box;
 
     &-link {
-        margin: 20px;
+        margin: $size-767*30 $size-767*50;
+        
         &:hover {
             filter: brightness(70%);
             transform: none;
         }
     }
     &-logo {
-        width: 80%;
+        width: $size-767*200;
         height: auto;
     }
 }

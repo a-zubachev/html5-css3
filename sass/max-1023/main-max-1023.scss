@@ -9,6 +9,22 @@
     }
 }
 
+.textboxes {
+
+    &-container {
+    width: 90%;
+    min-height: 130px;
+    }
+
+    &-title {
+        font-size: 26px;
+    }
+
+    &-txt {
+        font-size: 16px;
+    }
+}
+
 .latest-projects {
 	&-title,
 	&-txt {
@@ -16,16 +32,37 @@
 	}
 }
 
-.excellent-content {
-    background: none;
-    margin: 0;
-    padding: 0 140px 80px;
-    min-height: none;
+.excellent {
+    
+    &-content {
+        background-size: 300px;
+        background-position: $size-1023*60 bottom;
+        margin: 0;
+        padding: 0 0 80px;
+        min-height: 680px;
 
-    &-title,
-    &-txt,
-    &-list {
-        max-width: none;
+        &-title,
+        &-txt,
+        &-list {
+            max-width: none;
+        }
+
+        &-title {
+            margin: 110px $size-1023*60 30px;
+        }
+
+        &-txt {
+            margin: 0 $size-1023*60;
+        }
+
+        &-list {
+            margin: 60px  $size-1023*60 0 $size-1023*450;
+
+            &-item {
+                line-height: 1.4;
+                margin: 10px;
+            }
+        }
     }
 }
 

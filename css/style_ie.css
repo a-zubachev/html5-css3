@@ -1,7 +1,7 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
     
     .site-header {
-        min-height: none;
+        min-height: auto;
     }
 
     .site-header:before {
@@ -11,7 +11,7 @@
     }
 
     .carusel-slide-content {
-        min-height: none;
+        min-height: auto;
         height: 724px;
     }
 
@@ -25,18 +25,12 @@
         width: 590px;
     }
 
-    .textboxes {
-        min-height: none;
-    }
-
-    .textboxes:before {
-        content: "";
-        display: block;
+    .textboxes-container {
         height: 150px;
     }
 
     .counters {
-        min-height: none;
+        min-height: auto;
     }
 
     .counters:before {
@@ -46,7 +40,7 @@
     }
 
     .partners {
-        min-height: none;
+        min-height: auto;
     }
 
     .partners:before {
@@ -56,7 +50,7 @@
     }
 
     .copyright {
-        min-height: none;
+        min-height: auto;
     }
 
     .copyright_wrp {
@@ -67,5 +61,50 @@
         content: "";
         display: block;
         height: 111px;
+    }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 1279px), (-ms-high-contrast: none) and (max-width: 1279px) {
+
+    .latest-projects-item_wrp {
+        max-width: 100%;
+    }
+
+    .recent-item_wrp {
+        max-width: 100%;
+    }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 1023px), (-ms-high-contrast: none) and (max-width: 1023px) {
+    .site-header:before {
+        display: none;
+    }
+
+    .realization-txt,
+    .latest-projects-menu,
+    .recent-txt {
+        max-width: 100%;
+    }
+
+    .copyright_wrp:first-child:after {
+        display: none;
+    }
+
+    .partners:before {
+        display: none;
+    }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 767px), (-ms-high-contrast: none) and (max-width: 767px) {
+.menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    }
+}
+
+@media screen and (-ms-high-contrast: active) and (max-width: 480px), (-ms-high-contrast: none) and (max-width: 480px) {
+    .menu-toggle {
+        top: 18px;
     }
 }

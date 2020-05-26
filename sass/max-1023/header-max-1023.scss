@@ -1,6 +1,15 @@
 .logo {
     margin: 0;
-    transform: scale(1);
+    width: 181px;
+
+    &-svg {
+        width: 64px;
+        height: 56px;
+    }
+
+    &-txt {
+        font-size: 34px;
+    }
 }
 
 .site-header {

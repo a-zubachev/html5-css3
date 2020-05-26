@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+@mixin hyphens {
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
 @mixin carusel-btn($top-right, $bottom-left) {
     border-top: $top-right;
     border-right: $top-right;
@@ -53,6 +59,12 @@
     }
 }
 
+@mixin button-480 {
+    width: $size-480*168;
+    font-size: $size-480*14;
+    line-height: $size-480*48;
+}
+
 @mixin menu-link {
     color: $clr-menu;
     transition: color $trans-time;
@@ -91,7 +103,7 @@
     font-family: $font-txt;
     color: $clr-txt;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 1.75;
     font-weight: 300;
 }
 
